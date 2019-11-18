@@ -1,19 +1,10 @@
+# -*- coding: utf-8 -*-
 '''
-Happy Case, exact inventory match!*
-
-Input: { apple: 1 }, [{ name: owd, inventory: { apple: 1 } }]
-Output: [{ owd: { apple: 1 } }]
-
-Not enough inventory -> no allocations!
-
-Input: { apple: 1 }, [{ name: owd, inventory: { apple: 0 } }]
-Output: []
-
-Should split an item across warehouses if that is the only way to completely ship an item:
-
-Input: { apple: 10 }, [{ name: owd, inventory: { apple: 5 } }, { name: dm, inventory: { apple: 5 }}]
-Output: [{ dm: { apple: 5 }}, { owd: { apple: 5 } }]
+# Created on Nov-18-19 15:28
+# InventoryAllocator.py
+# @author: Jiesong He
 '''
+
 
 class InventoryAllocator:
     def __init__(self):

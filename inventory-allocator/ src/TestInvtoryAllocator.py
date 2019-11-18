@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+'''
+# Created on Nov-18-19 15:29
+# TestInvtoryAllocator.py
+# @author: Jiesong He
+'''
+
+
 from InventoryAllocator import InventoryAllocator as ia
 import unittest
 
@@ -63,7 +71,7 @@ class TestSum(unittest.TestCase):
                          test2['expected'], 'Test Failed in Case 2')
         
 
-    # test case 3: there are objects that cann't be supplied by all the inventories combined from all the warehouses
+    # test case 3: not enough objects
     def test_3(self):
         test3 = {'order': {'apple': 100, 'banana': 5, 'orange': 3},
                  'warehouses':  [{'name': 'owd', 'inventory': {'apple': 6, 'banana': 2}},
